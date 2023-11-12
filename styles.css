@@ -1,0 +1,220 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #404040;
+    margin: 0;
+}
+
+/* =================
+    Typography 
+   ================= */
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-shadow: 0 .75px #404040;
+    line-height: 1.25em;
+}
+
+.bold-text {
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 0.15em 0 0.1em;
+}
+
+p {
+    font-size: 1.125rem;
+    line-height: 1.35;
+}
+
+.beta-text {
+    font-size: .7rem;
+}
+
+.subheading {
+    color: #575757;
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin-bottom: 0.5em;
+}
+
+.beta-text,
+.top-text,
+.subheading {
+    text-transform: uppercase;
+}
+
+.top-text {
+    font-size: 1rem;
+    font-weight: 900;
+    padding-top: 0.25em;
+    border-top: 5px solid;
+    order: -1;
+    margin: 0 auto;
+}
+
+.fine-print {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: #858585;
+    margin-bottom: 2em;
+}
+
+
+/* =================
+    Flex containers
+   ================= */
+
+.intro,
+.main-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+/* =================
+    Intro
+   ================= */
+
+.intro {
+    justify-content: space-between;
+    min-height: 250px;
+    text-align: center;
+    color: #fff;
+    background: #4289FF url("images/read-background.png");
+    background-size: cover;
+    padding-bottom: 1em;
+}
+
+
+/* ====================
+    Main content
+   ==================== */
+
+.main-content {
+    align-items: center;
+    padding-top: 2.5em;
+}
+
+.img-main {
+    width: 165px;
+    border-radius: 50%;
+}
+
+.main-content p,
+form {
+    max-width: 450px;
+}
+
+/* =================
+    Form
+   ================= */
+
+input,
+button,
+#grade {
+    font-family: inherit;
+    width: 100%;
+    border-radius: 5px;
+}
+
+input,
+#grade {
+    padding: 0.5em;
+    border: 2px solid #d1d5db;
+}
+
+#grade {
+    color: #404040;
+}
+
+input {
+    margin-bottom: 0.75em;
+}
+
+input:focus,
+#grade:focus {
+    outline: none;
+    border-color: #4289FF;
+    background-color: #e6e8ec;
+}
+
+#grade:hover,
+.btn {
+    cursor: pointer;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding: 1em 0;
+    border: none;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #4289FF;
+    margin-top: 1em;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #6FA2FF;
+}
+
+/* =================
+    Media queries 
+   ================= */
+
+@media (min-width:590px) and (max-width:969px) {
+    h1 {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 970px) {
+    body {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 4.2vw;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    .beta-text {
+        font-size: .9rem;
+        text-shadow: 0 .25px #404040;
+    }
+
+    .intro,
+    .main-content {
+        width: 50%;
+    }
+
+    .intro {
+        min-height: 100vh;
+    }
+
+    .main-content {
+        justify-content: center;
+        padding-top: 0;
+    }
+
+    .fine-print {
+        margin-bottom: 0;
+    }
+}
