@@ -137,6 +137,11 @@ input,
     color: #404040;
 }
 
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
 input {
     margin-bottom: 0.75em;
 }
